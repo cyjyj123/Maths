@@ -1,0 +1,49 @@
+\documentclass{ctexbook}
+\usepackage{amsthm}
+\ctexset{
+    chapter={
+        number={\arabic{chapter}}
+    },
+    section={
+        number={\arabic{chapter}.\arabic{section}}
+    },
+    subsection={
+        number={\arabic{chapter}.\arabic{section}.\arabic{subsection}}
+    }
+}
+
+\newtheorem{theorem}{\indent 定理}[section]
+\newtheorem{lemma}[theorem]{\indent 引理}
+\newtheorem{proposition}[theorem]{\indent 命题}
+\newtheorem{corollary}[theorem]{\indent 推论}
+\newtheorem{definition}{\indent 定义}[section]
+\newtheorem{example}{\indent 例}[section]
+\newtheorem{remark}{\indent 注}[section]
+\newenvironment{solution}{\begin{proof}[\indent\bf 解]}{\end{proof}}
+\renewcommand{\proofname}{\indent\bf 证}
+
+\begin{document}
+{\Huge Maths \par \vspace{1.5em} 数学}
+
+\rule{\textwidth}{1pt}
+
+{\Huge\rightline{Level 1}}
+
+\include{frontmatter}
+
+{\tableofcontents}
+
+\chapter{命题逻辑和集合}
+\include{./chapter1/s1_1}
+\include{./chapter1/s1_2}
+\include{./chapter1/s1_3}
+\chapter{不等式}
+\chapter{幂、指数、对数及其函数}
+\chapter{三角函数与方程}
+\chapter{解三角形}
+\chapter{二元二次方程组和不等式}
+\chapter{复数}
+\chapter{简单立体几何}
+\chapter{圆锥曲线}
+\chapter{数列与极限}
+\end{document}
