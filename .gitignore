@@ -6,3 +6,8 @@
 *.pdf
 *.synctex.gz
 *.toc
+*.cut
+*.out
+*.qsl
+*.sol
+*.djs
