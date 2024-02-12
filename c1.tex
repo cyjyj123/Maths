@@ -1,6 +1,10 @@
-\documentclass{ctexbook}
+\documentclass[fontset=none]{ctexbook}
 \usepackage{amsthm}
+\usepackage{amsmath}
 \usepackage{exerquiz}
+
+\setCJKmainfont{Noto Serif CJK SC}
+
 \ctexset{
     chapter={
         number={\arabic{chapter}}
@@ -13,6 +17,8 @@
     }
 }
 
+
+
 \newtheorem{theorem}{\indent 定理}[section]
 \newtheorem{lemma}[theorem]{\indent 引理}
 \newtheorem{proposition}[theorem]{\indent 命题}
@@ -23,7 +29,10 @@
 \newenvironment{solution}{\begin{proof}[\indent\bf 解]}{\end{proof}}
 \renewcommand{\proofname}{\indent\bf 证}
 
+
+
 \begin{document}
+
 \sqTurnOffAlerts
 {\Huge Maths \par \vspace{1.5em} 数学}
 
@@ -42,7 +51,6 @@
 \include{./chapter1/s1_3}
 \chapter{方程（组）和不等式}
 \include{./chapter2/s2_1}
-\include{./chapter2/s2_2}
 \include{./chapter2/s2_3}
 \include{./chapter2/s2_4}
 \include{./chapter2/s2_5}

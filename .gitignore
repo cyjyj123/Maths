@@ -1,4 +1,5 @@
 /.vscode
+/fonts
 *.aux
 *.fdb_latexmk
 *.fls
@@ -11,3 +12,4 @@
 *.qsl
 *.sol
 *.djs
+*.xdv
